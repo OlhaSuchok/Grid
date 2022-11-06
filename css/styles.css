@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  font-family: inherit;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.hide {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+body {
+    margin: auto;
+    color: #2a2a2a;
+    font-family: 'Roboto', sans-serif;
+}
+
+.drid {
+  background-color: #fff;
+}
+
+/* Приклади використання */
+  /* grid-template-columns: 200px 200px 200px; 
+  grid-template-rows: 100px 100px;
+
+  grid-template-columns: 33.333% 33.333% 33.333%; 
+  grid-template-rows: 50% 50%;
+
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+
+  grid-template-columns: 200px minmax(150px, 200px) 200px; 
+  grid-template-rows: 100px 100px;
+
+  grid-template-columns: auto 1fr 1fr; 
+  grid-template-rows: 1fr 1fr;
+
+  grid-template-columns: fit-content(300px) 1fr auto; 
+  grid-template-rows: 1fr 1fr;
+
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, 1fr);  */
+
+.grid-body {
+  display: grid;
+  background-image: linear-gradient(
+    to bottom,
+    #3e5151,
+    #decba4
+  );
+  margin-bottom: 30px;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+}
+
+.grid-item {
+  text-align: center;
+  border: 2px solid #2a2a2a;
+  padding: 30px;
+  padding: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.grid-header,
+.grid-aside,
+.grid-content {
+  border: 2px dashed teal;
+  padding: 30px;
+  margin: 0 0 15px 0;
+}
+
+/* Приклади використання */
+  /* grid-template-columns: 150px 1fr; 
+  grid-template-rows: 100px 1fr; 
+  grid-template-areas: 
+  "header header"
+  "aside content"; */
+
+.grid-wrapper {
+  display: grid;
+  padding: 15px;
+  background-image: linear-gradient(
+  to bottom,
+  #11998e,
+  #38ef7d
+  );
+  grid-template: 
+  [start] "header header" 100px [row2] 
+  [row2] "aside content" 1fr [row-end] / 150px 1fr;
+}
+
+.grid-header {
+  grid-area: header;
+}
+
+.grid-aside {
+  grid-area: aside;
+}
+
+.grid-conten {
+  grid-area: conten;
+}
