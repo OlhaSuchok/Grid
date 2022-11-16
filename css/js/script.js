@@ -367,3 +367,39 @@
 // }
 
 // logItems = [7, 14, 44, 57];
+
+// Зробити лічильник +1 .... -1 При натисканні на кнопку і щоб, перультат лічильника виводився у браузері
+
+// const counter = {
+//     value = 0;
+
+//     increment() {
+//         this.value += 1;
+//     }
+
+//     decrement() {
+//         this.value -= 1;
+//     }
+
+// };
+
+// const decrementBtn = document.querySelector('.is-decrement');
+// const incrementBtn = document.querySelector('.is-increment');
+// const valueEL = document.querySelector('.is-value');
+
+// decrementBtn.addEventListener('click', function () {
+//     counter.decrement();
+//     valueEL.textContent = counter.value;
+// });
+
+// incrementBtn.addEventListener('click', function () {
+//     counter.increment();
+//     valueEL.textContent = counter.value;
+// });
+
+// HTML
+//     <div class="counter">
+//         <button class="is-increment">Зменшити</button>
+//         <p class="is-value">0</p>
+//         <button class="is-decrement">Збільшити</button>
+//     </div>
